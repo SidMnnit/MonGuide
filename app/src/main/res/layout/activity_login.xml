@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_login_rootview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/login_logo"
+            android:layout_width="300dp"
+            android:layout_height="91dp"
+            android:layout_marginBottom="24dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_monguide"></androidx.appcompat.widget.AppCompatImageView>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/activity_login_emailedittext"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/background_login_edittext"
+            android:drawableRight="@drawable/ic_email_24dp"
+            android:elevation="16dp"
+            android:focusableInTouchMode="true"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:textSize="16dp"></androidx.appcompat.widget.AppCompatEditText>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/activity_login_passwordedittext"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/background_login_edittext"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:textSize="16dp"
+            android:drawableRight="@drawable/ic_lock_24dp"
+            android:elevation="16dp">
+        </androidx.appcompat.widget.AppCompatEditText>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_login_loginbutton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Log In"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:stateListAnimator="@null"
+            android:elevation="16dp"
+            android:background="@drawable/background_login_loginbutton">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <ProgressBar
+            android:id="@+id/activity_login_progressbar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:indeterminateTint="@color/colorYellow"
+            android:visibility="gone">
+        </ProgressBar>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/activity_login_signuptextview"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:text="Don't have an account? Sign up."
+            android:textColor="@color/colorWhite"
+            android:textSize="16dp">
+        </androidx.appcompat.widget.AppCompatTextView>
+
+    </LinearLayout>
+
+</RelativeLayout>

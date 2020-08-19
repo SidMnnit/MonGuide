@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_answeritem"
+    android:padding="16dp"
+    android:layout_margin="8dp"
+    android:elevation="8dp">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/answer_item_shimmercontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- for profile picture, name and time-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@color/colorLightGrey"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="112dp"
+                        android:layout_height="20dp"
+                        android:background="@color/colorLightGrey"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_marginLeft="40dp"
+                android:background="@color/colorLightGrey"/>
+
+            <View
+                android:layout_width="304dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="40dp"
+                android:background="@color/colorLightGrey"/>
+
+        </LinearLayout>
+        <!-- end -->
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <LinearLayout
+        android:id="@+id/answer_item_fullanswercontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <!-- for profile picture, name and time-->
+        <LinearLayout
+            android:id="@+id/answer_item_userdetailscontainer"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/answer_item_profilepictureimageview"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/temp_harrypotter"
+                android:background="@drawable/background_whiteroundcorners"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/answer_item_usernametextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:text="Harry Potter"
+                    android:textColor="@android:color/black"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/answer_item_timestamptextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textSize="12dp"
+                    android:text="Yesterday at 8:35 AM"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/answer_item_bodytextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:textSize="12dp"
+            android:text="J.K. Rowling's Wizarding World. Whether you're looking for info on Fantastic Beasts, the book series or LEGO, we are the #1 Harry Potter fan database that anyone can edit.">
+        </TextView>
+    </LinearLayout>
+    <!-- end -->
+
+</RelativeLayout>

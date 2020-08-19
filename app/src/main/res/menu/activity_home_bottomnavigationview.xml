@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/activity_home_bottomnavigationview_menuitem_home"
+        android:title="Home" android:icon="@drawable/fill_home">
+    </item>
+
+    <!-- Empty item to fill space only -->
+    <item
+        android:title=""
+        android:enabled="false">
+    </item>
+
+    <item
+        android:id="@+id/activity_home_bottomnavigationview_menuitem_notifications"
+        android:title="Notifications"
+        android:icon="@drawable/ic_notifications_24dp">
+    </item>
+</menu>

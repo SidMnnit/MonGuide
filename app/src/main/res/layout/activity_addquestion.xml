@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/activity_addquestion_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        app:navigationIcon="@drawable/ic_back_24dp"
+        app:titleTextColor="@color/colorYellow"
+        app:title="Add Question"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/activity_addquestion_toolbar"
+        android:layout_marginTop="12dp">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/activity_addquestion_titleedittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:scrollHorizontally="false"
+            android:hint="Add title..."
+            android:focusableInTouchMode="true"
+            android:background="@drawable/background_addquestion_edittext"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:elevation="8dp"
+            android:layout_margin="12dp">
+        </androidx.appcompat.widget.AppCompatEditText>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/activity_addquestion_bodyedittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Add description..."
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_margin="12dp"
+            android:elevation="8dp"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:gravity="top|left"
+            android:scrollHorizontally="false"
+            android:background="@drawable/background_addquestion_edittext">
+        </androidx.appcompat.widget.AppCompatEditText>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/activity_addquestion_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/background_signup_signupbutton"
+        android:padding="8dp"
+        android:indeterminateTint="@color/colorYellow"
+        android:visibility="gone">
+    </ProgressBar>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/activity_addquestion_submitbutton"
+        android:text="Submit"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorYellow"
+        android:background="@drawable/background_signup_signupbutton"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+

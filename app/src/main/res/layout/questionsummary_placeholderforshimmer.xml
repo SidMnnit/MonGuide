@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@color/colorLightGrey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="160dp"
+                android:layout_height="24dp"
+                android:background="@color/colorLightGrey"/>
+
+            <View
+                android:layout_width="112dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorLightGrey"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="272dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorLightGrey"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorLightGrey"/>
+    <View
+        android:layout_width="312dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorLightGrey"/>
+    <View
+        android:layout_width="328dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorLightGrey"/>
+
+    <View
+        android:layout_width="272dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorLightGrey"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorLightGrey"/>
+
+</LinearLayout>

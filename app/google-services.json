@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "518300940123",
+    "firebase_url": "https://arctic-cocoa-277516.firebaseio.com",
+    "project_id": "arctic-cocoa-277516",
+    "storage_bucket": "arctic-cocoa-277516.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518300940123:android:eeeca7d39c20cf86d30c7e",
+        "android_client_info": {
+          "package_name": "com.monguide.monguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "518300940123-ljr3g1hdifsp4pg7ab8uchboidaqn4do.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLN7QZwRq8OsBPlzpggbO2I-Md0KDap_w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "518300940123-ljr3g1hdifsp4pg7ab8uchboidaqn4do.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

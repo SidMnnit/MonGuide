@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MonGuide</string>
+    <string name="illegal_login">Invalid email or password.</string>
+    <string name="required">Required</string>
+    <string name="error">Error occurred! Try again.</string>
+    <string name="noImageError">Please upload a profile picture.</string>
+</resources>

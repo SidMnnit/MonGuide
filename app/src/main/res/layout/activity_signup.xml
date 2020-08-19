@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/activity_signup_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="8dp"
+        app:title="Sign Up"
+        app:titleTextColor="@color/colorYellow"
+        app:navigationIcon="@drawable/ic_back_24dp">
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- for progress bar and signin button padding bottom is given -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="56dp"
+        android:layout_below="@id/activity_signup_toolbar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- for uploading profile picture -->
+            <!-- end -->
+
+            <!-- personal details -->
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/activity_signup_profilepictureimageview"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/background_signup_generic"
+                android:elevation="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_person_toolbar_dp_24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:padding="24dp"
+                android:elevation="8dp"
+                android:background="@drawable/background_signup_generic">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Details"
+                    android:textSize="16dp"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/activity_signup_nameedittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textSize="16dp"
+                    android:inputType="text"
+                    android:hint="Full name"
+                    android:background="@drawable/background_signup_edittext"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/activity_signup_emailedittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textSize="16dp"
+                    android:inputType="text"
+                    android:hint="Email"
+                    android:background="@drawable/background_signup_edittext"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/activity_signup_passwordedittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textSize="16dp"
+                    android:inputType="textVisiblePassword"
+                    android:hint="Password (atleast 6 characters)"
+                    android:background="@drawable/background_signup_edittext"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/activity_signup_collegeNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/background_signup_edittext"
+                    android:hint="College name"
+                    android:inputType="text"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+            <!-- end -->
+
+            <!-- education details -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:padding="24dp"
+                android:elevation="8dp"
+                android:background="@drawable/background_signup_generic">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Education Details"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/activity_signup_courseName_EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textSize="16dp"
+                    android:hint="Course name"
+                    android:inputType="text"
+                    android:background="@drawable/background_signup_edittext"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/activity_signup_graduationyearedittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textSize="16dp"
+                    android:hint="Graduation year"
+                    android:inputType="number"
+                    android:background="@drawable/background_signup_edittext"/>
+
+            </LinearLayout>
+
+            <!-- work details -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="16dp"
+                android:padding="24dp"
+                android:elevation="8dp"
+                android:background="@drawable/background_signup_generic">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Work Details (Optional)"
+                    android:textSize="16dp"
+                    android:textStyle="bold">
+                </androidx.appcompat.widget.AppCompatTextView>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/activity_signup_companyNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textSize="16dp"
+                    android:hint="Company name"
+                    android:inputType="text"
+                    android:background="@drawable/background_signup_edittext"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/activity_signup_jobProfile_EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textSize="16dp"
+                    android:hint="Job profile"
+                    android:inputType="text"
+                    android:background="@drawable/background_signup_edittext"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/activity_signup_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/background_signup_signupbutton"
+        android:padding="8dp"
+        android:indeterminateTint="@color/colorYellow"
+        android:visibility="gone">
+    </ProgressBar>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/activity_signup_signupbutton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:text="Sign Up"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorYellow"
+        android:background="@drawable/background_signup_signupbutton"/>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/activity_fullquestion_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="8dp"
+        app:title="All Answers"
+        app:titleTextColor="@color/colorYellow"
+        app:navigationIcon="@drawable/ic_back_24dp">
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/activity_fullquestion_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_fullquestion_toolbar"
+        android:layout_above="@id/activity_fullquestion_rl">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/activity_fullquestion_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true"
+        android:elevation="8dp"
+        android:background="@color/colorPrimaryDark">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/activity_fullquestion_writeansweredittext"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@+id/activity_fullquestion_progressbar"
+            android:layout_centerInParent="true"
+            android:padding="8dp"
+            android:layout_marginRight="8dp"
+            android:minLines="2"
+            android:maxLines="10"
+            android:hint="Type an answer..."
+            android:textSize="12dp"
+            android:background="@drawable/background_answeritem" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/activity_fullquestion_submmitanswerbutton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_send_24dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/background_submitanswerbutton"/>
+
+        <ProgressBar
+            android:id="@+id/activity_fullquestion_progressbar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/background_submitanswerbutton"
+            android:layout_alignParentRight="true"
+            android:indeterminateTint="@color/colorPrimaryDark"
+            android:visibility="invisible">
+        </ProgressBar>
+
+    </RelativeLayout>
+
+</RelativeLayout>
